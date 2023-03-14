@@ -8,7 +8,7 @@ body {
   overflow-y: hidden;
   margin: 0;
   color: #484e47;
-  font-family: montserrat;
+  font-family: Vladimir Script;
   font-weight: lighter;
 }
 body a {
@@ -33,4 +33,35 @@ body ol, body ul {
   list-style: none;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc {
+  justify-content: center;
+}
+.flex-jb {
+  justify-content: space-between;
+}
+.flex-je {
+  justify-content: space-evenly;
+}
+.flex-d-col {
+  flex-direction: column;
+}
+.flex-ac {
+  align-items: center;
+}
+.flex-wr {
+  flex-wrap: wrap;
+}
+
+header {
+  padding: 0.5% 2%;
+  box-shadow: 0px 50px 10px 0px rgba(34, 60, 80, 0.25);
+}
+
+.logo {
+  font-size: 40px;
 }/*# sourceMappingURL=index.css.map */
