@@ -1,0 +1,36 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #e1e1e1;
+  overflow-y: hidden;
+  margin: 0;
+  color: #484e47;
+  font-family: montserrat;
+  font-weight: lighter;
+}
+body a {
+  color: #484e47;
+  text-decoration: none;
+  cursor: pointer;
+}
+body button {
+  font-family: montserrat;
+  font-weight: lighter;
+  font-size: 14px;
+  outline: none;
+}
+body p {
+  font-size: 20px;
+  text-align: justify;
+}
+body hr {
+  margin: 0;
+}
+body ol, body ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}/*# sourceMappingURL=index.css.map */
