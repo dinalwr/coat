@@ -12,21 +12,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+    <script src="js/index.js"></script>
 
 </head>
 
 <body>
-    <header class="flex flex-ac flex-jb">
-        <div>
-            menu
+    <header id="navbar" class="grid">
+        <div class="burger-menu">
+            <a href="#" class="burger-menu_button">
+                <span class="burger-menu_lines"></span>
+            </a>
+            <nav class="burger-menu_nav">
+                <div class="links flex">
+                    <a href="#" class="burger-menu_link">SPRING COLLECTION</a>
+                    <a href="#" class="burger-menu_link">КАТАЛОГ</a>
+                    <a href="#" class="burger-menu_link">СКОРО</a>
+                    <a href="#" class="burger-menu_link">СКИДКИ</a>
+                    <a href="#" class="burger-menu_link">ИЗБРАННОЕ</a>
+                    <a href="#" class="burger-menu_link">КОНТАКТЫ</a>
+                    <a href="#" class="burger-menu_link">ВОЙТИ</a>
+                </div>
+            </nav>
+            <div class="burger-menu_overlay"></div>
         </div>
         <div class="logo">
-            <a href="###">Coat</a>
+            <a href="#">Coat</a>
         </div>
-        <div class="flex flex-ac">
-            <img src="img/личный каб..svg" alt="">
-            <img src="img/избранное.svg" alt="">
-            <img src="img/корзина.svg" alt="">
+        <div class="flex flex-end flex-ac">
+            <a href="#"><img class="flex-ac" src="img/личный каб.svg" alt=""></a>
+            <a href="#"><img class="flex-ac" src="img/избранное.svg" alt=""></a>
+            <a href="#"><img class="flex-ac" src="img/корзина.svg" alt=""></a>
         </div>
     </header>
 
