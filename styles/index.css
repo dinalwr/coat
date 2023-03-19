@@ -8,7 +8,6 @@ body {
   overflow-y: hidden;
   margin: 0;
   color: #484e47;
-  font-family: Vladimir Script;
   font-weight: lighter;
 }
 body a {
@@ -71,6 +70,7 @@ body ol, body ul {
   font-size: 40px;
   width: 100px;
   text-align: center;
+  font-family: Vladimir Script;
 }
 
 .burger-menu_nav {
@@ -172,7 +172,6 @@ header {
 }
 
 .nav-icon {
-  width: 50%;
   margin-right: 17px;
 }
 
