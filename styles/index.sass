@@ -18,7 +18,7 @@ body
         font-size: 14px
         outline: none
     p
-        font-size: 20px
+        font-size: 2rem
         text-align: justify
     hr
         margin: 0
@@ -34,6 +34,8 @@ body
         justify-content: space-between
     &-je
         justify-content: space-evenly
+    &-ja
+        justify-content: space-around
     &-d-col
         flex-direction: column
     &-ac
@@ -154,13 +156,79 @@ header
     padding-right: 250px
 
 .container
+    max-width: 70vw
+    margin: 0 auto
+
+.mb
+    margin-bottom: 30px
+
+.field
+    display: block
+    width: 100vw
+    height: auto
+    object-fit: cover
+
+.banner
+    font-size: 4rem
+    color: white
+    & img
+        display: block
+
+.text
+    &-big
+        color: white
+        font-size: 8rem
+
+    &-small
+        color: white
+        font-size: 2rem
+
+.container-img
     position: relative
     text-align: center
-    color: white
 
 .centered
-    font-size: 80px
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+
+.first
+    margin-top: 60px
+
+.second
+    font-size: 3rem
+    & a
+        transition: .2s
+    & a:hover
+        scale: 1.1
+
+.fourth
+    & p
+        background: #D9D9D9
+        padding: 20px
+        max-width: 40vw
+        min-width: 340px
+        box-shadow: 0 0 10px 0 black
+
+.statistics
+    background: #d9d9d9
+    width: 9em
+    height: 5em
+    font-size: 2rem
+    box-shadow: 0 0 10px 0 black
+
+footer
+    background: #d9d9d9
+    font-size: 1.5rem
+
+.footer
+    padding: 20px 0
+    &-block
+        margin-right: 50px
+    &-name
+        font-weight: bold
+    &-item 
+        &-link 
+            color: #484e47 !important
+            margin-right: 10px
