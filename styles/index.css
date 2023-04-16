@@ -22,7 +22,8 @@ body button {
   outline: none;
 }
 body p {
-  font-size: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
   text-align: justify;
 }
 body hr {
@@ -32,6 +33,12 @@ body ol, body ul {
   list-style: none;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+body hr {
+  max-width: 80vw;
+  margin: 15px auto;
+  border-left: 0;
+  border-right: 0;
 }
 
 .flex {
@@ -55,11 +62,14 @@ body ol, body ul {
 .flex-ac {
   align-items: center;
 }
+.flex-as {
+  align-items: stretch;
+}
 .flex-wr {
   flex-wrap: wrap;
 }
 .flex-end {
-  justify-content: flex-end;
+  justify-content: end;
 }
 
 .grid {
@@ -198,7 +208,7 @@ header {
 .field {
   display: block;
   width: 100vw;
-  height: auto;
+  height: 25vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -237,29 +247,61 @@ header {
 }
 
 .second {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .second a {
   transition: 0.2s;
 }
 .second a:hover {
-  scale: 1.1;
+  scale: 1.05;
+}
+.second-item {
+  flex: 33.3%;
+}
+.second-item img {
+  box-shadow: 0 0 10px 0 black;
 }
 
+.fourth-item {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+}
 .fourth p {
   background: #D9D9D9;
   padding: 20px;
-  max-width: 40vw;
-  min-width: 340px;
   box-shadow: 0 0 10px 0 black;
+  margin-bottom: 15px;
 }
 
 .statistics {
-  background: #d9d9d9;
-  width: 9em;
-  height: 5em;
+  display: flex;
+  flex: 23%;
+  align-items: center;
+  max-width: 250px;
   font-size: 2rem;
+  background: #d9d9d9;
   box-shadow: 0 0 10px 0 black;
+  margin-right: 2%;
+}
+.statistics p {
+  margin: 15px auto;
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+
+.product {
+  flex: 25%;
+}
+.product-item {
+  margin: 10px;
+}
+.product-item img {
+  display: block;
+}
+.product-img {
+  max-width: 100%;
 }
 
 footer {
@@ -279,4 +321,65 @@ footer {
 .footer-item-link {
   color: #484e47 !important;
   margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+  .product {
+    flex: 33.3%;
+  }
+  .statistics {
+    flex: 50%;
+    margin: 2%;
+  }
+  .banner {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .field {
+    width: auto;
+  }
+  .product {
+    flex: 50%;
+  }
+  .second-item {
+    margin: 2% 0;
+  }
+  .fourth {
+    max-width: 100%;
+  }
+  .fourth p {
+    max-width: 70vw;
+    font-size: 1rem;
+  }
+  .fifth {
+    max-width: 100%;
+  }
+  .fifth-row {
+    justify-content: center;
+  }
+  .statistics {
+    flex: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .second {
+    max-width: 100%;
+  }
+  .catalog {
+    max-width: 100%;
+  }
+  .product {
+    flex: 100vw;
+    margin: 0;
+  }
+  .product-item {
+    margin: 0;
+  }
+  .product-img {
+    width: 100%;
+  }
+  .statistics {
+    flex: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
