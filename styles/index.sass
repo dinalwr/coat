@@ -428,15 +428,16 @@ body
         margin: 0
 
 button
-    background: #525252
-    border: solid 1px black
+    background: transparent
+    border: solid 1px #525252
     padding: 10px 40px
     text-align: center
     font-size: 1.5rem
     cursor: pointer
     transition: .3s
     &:hover
-        background: #5252527c
+        background: #525252
+        color: #fff
 
 /* футер */
 footer
@@ -450,7 +451,9 @@ footer
 .footer
     padding: 20px 0
     &-block
-        margin-right: 50px
+        flex: 25%
+        &-item
+            justify-content: start
     &-name
         font-weight: bold
     &-item
@@ -469,6 +472,11 @@ footer
     .statistics
         flex: 50%
         margin: 2%
+
+    .footer
+        padding: 20px 0
+        &-block
+            flex: 50%
 
     .banner
         font-size: 2.5rem
@@ -503,6 +511,7 @@ footer
 
     .product
         &-containter
+            max-width: 100%
             height: 80vh
             grid-template-columns: 1fr
             justify-items: center
