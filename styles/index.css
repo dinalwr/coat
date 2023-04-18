@@ -6,6 +6,7 @@ html, body {
 }
 
 body {
+  height: 100%;
   background: #e1e1e1;
   overflow-y: hidden;
   margin: 0;
@@ -553,7 +554,108 @@ button:hover {
   color: #fff;
 }
 
-/* футер */
+/* свайпер */
+.page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.page-sreen {
+  width: 100vw;
+  height: 100vh;
+}
+.page-pagination {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translate(0px, -50%);
+}
+.page-bullet {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
+  border-radius: 50%;
+  transition: backgtound-color 0.3s;
+}
+.page-bullet-active {
+  background: #fff;
+}
+.page-scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.page-drag-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------- */
+.screen {
+  flex: 1 0 100%;
+  position: relative;
+}
+.screen-content {
+  padding-top: 80px;
+  position: relative;
+  z-index: 2;
+}
+.screen-content img {
+  width: 40%;
+}
+.screen-title {
+  font-size: 50px;
+  color: #000000;
+  margin: 0 0 30px 0;
+  display: inline-block;
+}
+.screen-title-bg {
+  background: rgba(0, 0, 0, 0.5019607843);
+  padding: 15px;
+}
+.screen-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.screen-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.screen-image img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* -------------------футер ----------------------------*/
 footer {
   background: #d9d9d9;
   font-size: 1.5rem;
