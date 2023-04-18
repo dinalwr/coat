@@ -586,7 +586,7 @@ button:hover {
   background: rgba(0, 0, 0, 0.5);
   margin: 10px 0;
   border-radius: 50%;
-  transition: backgtound-color 0.3s;
+  transition: 0.3s;
 }
 .page-bullet-active {
   background: #fff;
@@ -619,7 +619,7 @@ button:hover {
   z-index: 2;
 }
 .screen-content img {
-  width: 40%;
+  width: 400px;
 }
 .screen-title {
   font-size: 50px;
@@ -730,6 +730,9 @@ footer {
     height: 80vh;
     grid-template-columns: 1fr;
     justify-items: center;
+  }
+  .screen-content img {
+    width: 200px;
   }
 }
 @media (max-width: 500px) {
