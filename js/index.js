@@ -20,7 +20,7 @@ let pageSlider = new Swiper('.page', {
   slideClass: "page-screen",
   direction: 'vertical',
   slidesPerViev: 'auto',
-  parallax: true,
+  parallax: false,
 
   keyboard: {
     enabled: true,

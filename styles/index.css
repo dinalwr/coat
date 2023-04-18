@@ -569,7 +569,7 @@ button:hover {
   width: 100%;
   height: 100%;
 }
-.page-sreen {
+.page-screen {
   width: 100vw;
   height: 100vh;
 }
@@ -586,7 +586,7 @@ button:hover {
   background: rgba(0, 0, 0, 0.5);
   margin: 10px 0;
   border-radius: 50%;
-  transition: 0.3s;
+  transition: backgtound-color 0.3s;
 }
 .page-bullet-active {
   background: #fff;
@@ -628,6 +628,7 @@ button:hover {
   display: inline-block;
 }
 .screen-title-bg {
+  border-radius: 10px;
   background: rgba(0, 0, 0, 0.5019607843);
   padding: 15px;
 }
@@ -642,17 +643,19 @@ button:hover {
 .screen-image {
   position: absolute;
   width: 100%;
+  height: 100vh;
   top: 0;
-  left: 0;
+  right: 0;
 }
 .screen-image img {
   position: absolute;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
   top: 0;
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 /* -------------------футер ----------------------------*/
@@ -731,10 +734,11 @@ footer {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .screen-content img {
-    width: 200px;
-  }
 }
+.screen-content img {
+  width: 200px;
+}
+
 @media (max-width: 500px) {
   .second {
     max-width: 100%;
