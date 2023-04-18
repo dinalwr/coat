@@ -329,22 +329,20 @@ body hr {
 
 /* контейнер каталога одежды */
 .catalog.container {
-  max-width: 66vw;
+  max-width: 60vw;
 }
 
 /* разметка каждого товара */
 .product {
   position: relative;
-  flex: 25%;
+  flex: 23%;
+  margin: 1%;
 }
 .product:hover .product-img {
   opacity: 0.3;
 }
 .product:hover .middle {
   opacity: 1;
-}
-.product-item {
-  margin: 0 2% 4% 2%;
 }
 .product-img {
   max-width: 100%;
@@ -685,7 +683,7 @@ footer {
 /* медиа запросы */
 @media (max-width: 992px) {
   .product {
-    flex: 33.3%;
+    flex: 31.3%;
   }
   .statistics {
     flex: 50%;
@@ -706,7 +704,7 @@ footer {
     width: auto;
   }
   .product {
-    flex: 50%;
+    flex: 48%;
   }
   .second-item {
     margin: 2% 0;
