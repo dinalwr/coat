@@ -427,12 +427,58 @@ body
     &, h1, h2
         margin: 0
 
+form
+    position: relative
+    z-index: 1
+    background: #e1e1e1
+    margin: 25vh 0
+    padding: 10vh
+    box-shadow: 0 0 10px 0 #000000
+    border-radius: 5%
+    h1
+        text-align: center
+        margin-bottom: 30px
+    h5
+        text-align: center
+        text-decoration: solid
+
+.ellipse
+    position: absolute
+    z-index: 0
+    transform: translate(-50%, -50%)
+    top: 50%
+    left: 50%
+    width: 35%
+
+.login-form
+    max-width: 400px
+    margin: 0 auto
+    padding: 20px
+    border: 1px solid #ccc
+    border-radius: 5px
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)
+
+.form-group
+    margin-bottom: 20px
+    & label
+        display: block
+        margin-bottom: 5px
+        font-weight: bold
+    & input[type="email"], input[type="password"]
+        width: 100%
+        padding: 10px
+        border: 1px solid #ccc
+        border-radius: 5px
+        box-sizing: border-box
+
 button
     background: transparent
     border: solid 1px #525252
     padding: 10px 40px
     text-align: center
     font-size: 1.5rem
+    border-radius: 5px
+    width: 100%
     cursor: pointer
     transition: .3s
     &:hover
@@ -443,9 +489,6 @@ button
 footer
     background: #d9d9d9
     font-size: 1.5rem
-    position: relative
-    bottom: 0
-    left: 0
     width: 100%
 
 .footer

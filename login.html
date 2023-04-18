@@ -26,7 +26,6 @@
                 </div>
                 <a href="index.html" class="header-logo">Coat</a>
                 <div class="flex flex-end flex-ac">
-                    <a href="login.html"><img class="header-ico" src="img/user.svg" alt=""></a>
                     <a href=""><img class="header-ico" src="img/favorite.svg" alt=""></a>
                     <a href=""><img class="header-ico" src="img/shopbag.svg" alt=""></a>
                 </div>
@@ -41,43 +40,24 @@
         </div>
     </header>
 
-    <main>
-        <section class="product-containter container d-grid">
-            <div class="product-wraper">
-                <img class="product-imgage" src="img/man/card-4.png" alt="">
+    <main class="flex flex-ac flex-d-col flex-jb">
+        <form method="post">
+            <h1>Sign up</h1>
+            <div class="form-group">
+                <label for="email">Login or email</label>
+                <input type="email" id="email" name="email" required>
             </div>
-            <div class="product-properties flex flex-d-col">
-                <div class="price mb">
-                    <h1>Product</h1> <br>
-                    <h2>20 000 RUB</h2>
-                </div>
-                <div class="mb">
-                    <h1>Sizes</h1>
-                    <div class="flex">
-                        <label class="check">S
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="check">M
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="check">L
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="check">XL
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <button>ADD</button>
-                <div class="btn">
-                </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
             </div>
-        </section>
-
+            <button type="submit">Sign up</button>
+            <a href="#">
+                <h5><u>Already has account?</u></h5>
+            </a>
+        </form>
+        <img class="ellipse" src="img/Ellipse 4.svg" alt="">
+        <img class="ellipse" src="img/Ellipse 5.svg" alt="">
     </main>
 
     <footer>
