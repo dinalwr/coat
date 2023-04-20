@@ -20,7 +20,6 @@ let pageSlider = new Swiper('.page', {
   slideClass: "page-screen",
   direction: 'vertical',
   slidesPerViev: 'auto',
-  parallax: false,
 
   keyboard: {
     enabled: true,
@@ -40,17 +39,19 @@ let pageSlider = new Swiper('.page', {
   observeParents: true,
   observeSlideChildren: true,
 
-  pagination: {
-    el: '.page-pagination',
-    type: 'bullets',
-    clickable: true,
-    bulletClass: "page-bullet",
-    bulletActiveClass: "page-bullet-active",
-  },
-
   scrollbar: {
     el: '.page-scroll',
     dragClass: "page-drag-scroll",
     draggable: true,
   },
 })
+
+function b1() {
+  var x = document.getElementById("myDIV1");
+      x.style.display = "none";
+}
+
+function b2() {
+  var x = document.getElementById("myDIV2");
+      x.style.display = "none";
+}
