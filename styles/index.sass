@@ -485,6 +485,7 @@ form
 
 button
     background: transparent
+    color: #000 !important
     border: solid 1px #525252
     padding: 10px 40px
     text-align: center
@@ -493,9 +494,10 @@ button
     width: 100%
     cursor: pointer
     transition: .3s
+    margin-bottom: 15px
     &:hover
         background: #525252
-        color: #fff
+        color: #fff !important
 
 /* свайпер */
 .page
@@ -624,6 +626,31 @@ button
             display: flex
             align-content: center
             text-align: center
+/* -------------------------------------------- */
+.buy
+    &-item
+        position: relative
+        padding: 20px
+        margin: 20px auto
+        background: #d9d9d9
+        box-shadow: 0 0 10px 0 black
+        
+    &-content
+        flex-wrap: wrap
+        &-item
+            padding: 5px
+            margin: 10px
+            &-1
+                align-self: start
+            &-2
+                align-self: start
+            &-3
+                align-self: end
+            &-4
+                position: absolute
+                top: 20px
+                right: 20px
+                cursor: pointer
 
 /* -------------------футер ----------------------------*/
 footer
@@ -735,3 +762,12 @@ footer
                 display: flex
                 align-content: center
                 text-align: center
+
+    .buy-image
+        & img
+            width: 70vw
+
+    .buy-content-item-4
+        top: 30px
+        right: 30px
+
