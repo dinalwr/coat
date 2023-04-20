@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coat</title>
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,79 +44,47 @@
     </header>
 
     <main>
-        <section class="first">
-            <div class="banner container-img">
-                <img class="field" src="img/Back-img.png" alt="">
-                <div class="centered">Softness and comfort for you</div>
+        <section class="product-containter container d-grid">
+            <div class="product-wraper">
+                <img class="product-imgage" src="img/children/card-17.png" alt="">
             </div>
-        </section>
-        <hr>
-        <section class="second container flex flex-ac flex-jb flex-wr">
-            <div class="container-img second-item"><a href="catalog-m.html">
-                    <img src="img/card-man.png" alt="">
-                    <div class="centered">
-                        <span>Men collection</span>
+            <div class="product-properties flex flex-d-col">
+                <div class="price mb">
+                    <h1>Product</h1> <br>
+                    <h2>20 000 RUB</h2>
+                </div>
+                <div class="mb">
+                    <h1>Sizes</h1>
+                    <div class="flex">
+                        <label class="check">S
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="check">M
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="check">L
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="check">XL
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
-                </a></div>
-            <div class="container-img second-item"><a href="catalog-w.html">
-                    <img src="img/card-woman.png" alt="">
-                    <div class="centered">
-                        <span>Woman collection</span>
-                    </div>
-                </a></div>
-            <div class="container-img second-item"><a href="catalog-c.html">
-                    <img src="img/6723221_middle-400x600.jpg" alt="">
-                    <div class="centered">
-                        <span>Children collection</span>
-                    </div>
-                </a></div>
+                </div>
+                <button>Add to favorites</button>
+                <div class="flex flex-ac">
+                    <button class="text-small">BUY</button>
+                    <img style="width: 30px; margin: 0 0 15px 10px; cursor: pointer;" src="img/favorite.svg" alt="">
+                </div>
+            </div>
+            <img class="ellipse" src="img/Ellipse 4.svg" alt="">
+            <img class="ellipse" src="img/Ellipse 5.svg" alt="">
         </section>
         <hr>
-        <section class="third container-img banner">
-            <img class="field" src="img/this-season-collection.png" alt="">
-            <div class="centered">
-                <span>This season colleciton</span>
-            </div>
-        </section>
-        <hr>
-        <section class="fourth flex-ac flex-jb flex-wr flex container">
-            <div class="fourth-item flex flex-wr">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis mollitia dolorum, inventore
-                    eveniet
-                    enim iusto dicta praesentium ut voluptate odit corrupti, consequuntur, dolorem deleniti. Quod soluta
-                    atque voluptatem illum excepturi. <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad animi ea laboriosam amet eum quae
-                    temporibus, a atque? Iusto eum ipsa vitae quisquam repudiandae deleniti in quod harum eaque saepe?
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, pariatur et? Maiores doloribus dicta
-                    eum possimus, exercitationem repellendus necessitatibus cumque, aliquam distinctio ullam neque odit
-                    assumenda tempora in! Vel, nulla.
-                </p>
-            </div>
-            <div class="fourth-item">
-                <img src="img/dummy.png" alt="">
-            </div>
-        </section>
-        <hr>
-        <section class="fifth container flex flex-wr flex-as flex-jb">
 
-            <div class="statistics">
-                <p>100 thousand satisfied customers</p>
-            </div>
-            <div class="statistics">
-                <p>More than 5 thousand collectible outfits</p>
-            </div>
-            <div class="statistics">
-                <p>More than 2 thousand stores</p>
-            </div>
-            <div class="statistics">
-                <p>Hundreds of coloborations</p>
-            </div>
-
-        </section>
-        <hr>
     </main>
 
     <footer>
@@ -124,15 +93,15 @@
             <div class="footer-block">
                 <h5 class="footer-block-name">Social media</h4>
                     <ul class="footer-block-item flex flex-jb">
-                        <li><a href="###" class="footer-item-link fa fa-facebook"></a></li>
+                        <li><a href="###" class="footer-item-link fa fa-telegram"></a></li>
                         <li><a href="###" class="footer-item-link fa fa-youtube"></a></li>
                         <li><a href="###" class="footer-item-link fa fa-pinterest"></a></li>
-                        <li><a href="###" class="footer-item-link fa fa-twitter"></a></li>
+                        <li><a href="###" class="footer-item-link fa fa-vk"></a></li>
                     </ul>
             </div>
             <div class="footer-block">
                 <h5 class="footer-block-name">Tabs</h5>
-                <ul class="footer-block-item flex flex-wr flex-d-col">
+                <ul class="footer-block-item flex flex-d-col">
                     <li><a class="footer-item-link" href="catalog-m.html">Men catalog</a></li>
                     <li><a class="footer-item-link" href="catalog-w.html">Woman catalog</a></li>
                     <li><a class="footer-item-link" href="catalog-c.html">Children catalog</a></li>

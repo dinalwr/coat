@@ -45,10 +45,8 @@ body hr {
   border-right: 0;
 }
 
-#sm-wrapper {
-  display: none;
-}
-
+/* #sm-wrapper
+ *  display: none */
 /* флекс классы */
 .flex {
   display: flex;
