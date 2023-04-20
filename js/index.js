@@ -45,13 +45,3 @@ let pageSlider = new Swiper('.page', {
     draggable: true,
   },
 })
-
-function b1() {
-  var x = document.getElementById("myDIV1");
-      x.style.display = "none";
-}
-
-function b2() {
-  var x = document.getElementById("myDIV2");
-      x.style.display = "none";
-}
