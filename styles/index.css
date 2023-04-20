@@ -284,10 +284,10 @@ body hr {
 .second {
   font-size: 2.5rem;
 }
-.second a {
+.second div {
   transition: 0.2s;
 }
-.second a:hover {
+.second div:hover {
   scale: 1.05;
 }
 .second-item {
@@ -503,6 +503,7 @@ form h5 {
 }
 
 .ellipse {
+  opacity: 0.5;
   position: absolute;
   z-index: 0;
   transform: translate(-50%, -50%);
@@ -656,8 +657,31 @@ button:hover {
   display: block;
 }
 
+/* -------------------------------------- */
+.personal {
+  z-index: 2;
+  position: relative;
+  margin-top: 80px;
+  font-size: 1.5rem;
+}
+.personal-links {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2274509804);
+  font-size: 1.5rem;
+  width: 40vw;
+  min-width: 300px;
+  height: 10vh;
+  text-align: center;
+  margin-bottom: 20px;
+  background: #d9d9d9;
+}
+.personal-links a {
+  padding: 2vh 10vw;
+}
+
 /* -------------------футер ----------------------------*/
 footer {
+  position: relative;
+  z-index: 10;
   background: #d9d9d9;
   font-size: 1.5rem;
   width: 100%;

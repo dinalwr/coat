@@ -243,9 +243,9 @@ body
 
 .second
     font-size: 2.5rem
-    & a
+    & div
         transition: .2s
-    & a:hover
+    & div:hover
         scale: 1.05
     &-item
         flex: 33.3%
@@ -444,6 +444,7 @@ form
         text-decoration: solid
 
 .ellipse
+    opacity: 0.5
     position: absolute
     z-index: 0
     transform: translate(-50%, -50%)
@@ -577,8 +578,30 @@ button
             object-fit: cover
             display: block
 
+
+/* -------------------------------------- */
+
+.personal
+    z-index: 2
+    position: relative
+    margin-top: 80px
+    font-size: 1.5rem
+    &-links
+        box-shadow: 0 0 50px 0 #0000003a
+        font-size: 1.5rem
+        width: 40vw
+        min-width: 300px
+        height: 10vh
+        text-align: center
+        margin-bottom: 20px
+        background: #d9d9d9
+        & a
+            padding: 2vh 10vw
+
 /* -------------------футер ----------------------------*/
 footer
+    position: relative
+    z-index: 10
     background: #d9d9d9
     font-size: 1.5rem
     width: 100%
