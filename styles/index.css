@@ -45,9 +45,7 @@ body hr {
   border-right: 0;
 }
 
-/* #sm-wrapper
- * display: none */
-/* флекс классы */
+/* --------флекс классы--------- */
 .flex {
   display: flex;
 }
@@ -91,7 +89,7 @@ body hr {
   display: grid;
 }
 
-/* нав меню, классы всей шапки */
+/* -------------нав меню, классы всей шапки--------- */
 .header {
   position: fixed;
   width: 100%;
@@ -223,7 +221,7 @@ body hr {
   padding-right: 250px;
 }
 
-/* стилизация контента */
+/* ------------стилизация контента------------------- */
 .container {
   max-width: 70vw;
   margin: 0 auto;
@@ -263,7 +261,7 @@ body hr {
   font-size: 2rem;
 }
 
-/* центрированный контент */    
+/* ----------------центрированный контент------------------ */    
 .container-img {
   position: relative;
   text-align: center;
@@ -276,7 +274,7 @@ body hr {
   transform: translate(-50%, -50%);
 }
 
-/* главная классы по порядку по секциям */
+/* ----------главная классы по порядку по секциям---------------- */
 .first {
   margin-top: 60px;
 }
@@ -309,7 +307,7 @@ body hr {
   margin-bottom: 15px;
 }
 
-/* статистика */
+/* ------------статистика---------------- */
 .statistics {
   display: flex;
   flex: 23%;
@@ -373,7 +371,7 @@ body hr {
   text-align: center;
 }
 
-/* страница товара */
+/* ------------------страница товара ----------------*/
 .product-containter {
   width: auto;
   padding-top: 70px;
@@ -390,7 +388,11 @@ body hr {
   margin: 5vh 0;
 }
 
-/* The container */
+.price, .price h1, .price h2 {
+  margin: 0;
+}
+
+/* --------Контайнер---Radio-buttons---------- */
 .check {
   display: block;
   position: relative;
@@ -403,12 +405,13 @@ body hr {
           user-select: none;
 }
 
-/* Hide the browser's default radio button */
+/* Убуираем стандартные radio */
  *  & input
  *      position: absolute
  *      opacity: 0
  *      cursor: pointer */
-/* Create a custom radio button */
+/* Создаём кастомные */
+ *
  *  &mark
  *      position: absolute
  *      top: 0
@@ -417,21 +420,25 @@ body hr {
  *      width: 25px
  *      background-color: #eee
  *      border-radius: 50% */
-/* On mouse-over, add a grey background color */
+/* При наведении мыши */
+ *
  *  &:hover input ~ &mark
  *      background-color: #ccc */
-/* When the radio button is checked, add a blue background */
+/* Когда кнопка отмечена добавляем back */
+ *
  *  & input:checked ~ &mark
  *      background-color: #525252 */
-/* Create the indicator (the dot/circle - hidden when not checked) */
+/* Индикатор когда он не отмечен */
+ *
  *  &mark:after
  *      content: ""
  *      position: absolute
  *      display: none */
-/* Show the indicator (dot/circle) when checked */
+/* показ индикатора когда он отмечен*/
+ *
  *  & input:checked ~ &mark:after
  *      display: block */
-/* Style the indicator (dot/circle) */
+/* Стиль индикатора dot/circle */
 .check {
   display: block;
   position: relative;
@@ -490,10 +497,7 @@ body hr {
   background: white;
 }
 
-.price, .price h1, .price h2 {
-  margin: 0;
-}
-
+/* -----------------Форма---------------------- */
 form {
   position: relative;
   z-index: 1;
@@ -566,7 +570,7 @@ button:hover {
   color: #fff !important;
 }
 
-/* свайпер */
+/* -----------------свайпер----------------- */
 .page {
   position: fixed;
   width: 100%;
@@ -691,7 +695,7 @@ button:hover {
   padding: 2vh 10vw;
 }
 
-/* -------------------------------------- */
+/* ------------------------------------------- */
 .about {
   margin: 10vh auto;
 }
@@ -757,7 +761,7 @@ button:hover {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* ---------------------------------------- */
+/* -------------------------------------------------- */
 /* -------------------футер ----------------------------*/
 footer {
   background: #d9d9d9;
